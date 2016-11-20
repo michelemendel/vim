@@ -49,6 +49,10 @@ nmap <S-Enter> O<Esc>j
 nmap <C-o> O<Esc>j
 nmap <CR> o<Esc>k
 
+" Set and Toggle line numbers
+set number
+nmap <C-N><C-N> :set invnumber<CR>
+
 " Reformat : CTRL-SHIFT-R : This doesn't work since Vi can't tell CTRL-R and
 " CTRL-SHIFT-R apart.
 "noremap <C-S-R> <esc>ggVG==
