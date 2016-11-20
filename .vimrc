@@ -1,5 +1,7 @@
+" Handles plugins
 execute pathogen#infect()
 
+"
 filetype plugin indent on
 syntax on
 set encoding=utf-8
@@ -30,14 +32,28 @@ syntax on
 nmap <F3> a<C-R>=strftime("%Y.%m.%d %a %H:%M")<CR><Esc>
 imap <F3> <C-R>=strftime("%Y.%m.%d %a %H:%M")<CR>
 
-
-
-
-" Micheles configs
-
 " Remap the escape key
 inoremap jk <ESC>
 
 " Leader key
 let mapleader = "\<Space>"
+
+" 
+vnoremap . :norm.<CR>
+
+" CTRL-a
+noremap <C-a> <esc>ggVG<CR>
+
+" Insert new lines with enter
+nmap <S-Enter> O<Esc>j
+nmap <C-o> O<Esc>j
+nmap <CR> o<Esc>k
+
+" Reformat : CTRL-SHIFT-R : This doesn't work since Vi can't tell CTRL-R and
+" CTRL-SHIFT-R apart.
+"noremap <C-S-R> <esc>ggVG==
+
+
+
+
 
