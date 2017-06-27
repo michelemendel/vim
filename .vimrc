@@ -57,7 +57,7 @@ nmap <C-N><C-N> :set invnumber<CR>
 " CTRL-SHIFT-R apart.
 "noremap <C-S-R> <esc>ggVG==
 
-
-
+" Copy/Paste to Mac
+map <C-c> y:e ~/clipsongzboard<CR>P:w !pbcopy<CR><CR>:bdelete!<CR>
 
 
