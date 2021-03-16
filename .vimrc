@@ -1,5 +1,5 @@
 " Handles plugins
-execute pathogen#infect()
+" execute pathogen#infect()
 
 "
 filetype plugin indent on
@@ -59,5 +59,6 @@ nmap <C-N><C-N> :set invnumber<CR>
 
 " Copy/Paste to Mac
 map <C-c> y:e ~/clipsongzboard<CR>P:w !pbcopy<CR><CR>:bdelete!<CR>
+set clipboard=unnamed
 
 
