@@ -33,7 +33,7 @@ nmap <F3> a<C-R>=strftime("%Y.%m.%d %a %H:%M")<CR><Esc>
 imap <F3> <C-R>=strftime("%Y.%m.%d %a %H:%M")<CR>
 
 " Remap the escape key
-inoremap jj <ESC>
+inoremap jk <ESC>
 
 " Leader key
 let mapleader = "\<Space>"
@@ -61,6 +61,7 @@ nmap <C-N><C-N> :set invnumber<CR>
 map <C-c> y:e ~/clipsongzboard<CR>P:w !pbcopy<CR><CR>:bdelete!<CR>
 set clipboard=unnamed
 
+" Vertical bar cursor in insert mode
 let &t_SI = "\e[6 q"
 let &t_EI = "\e[2 q"
 
